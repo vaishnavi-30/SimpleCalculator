@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+Enter number 1 : <input type="number" id="num1" required autofocus>
+Enter number 1 : <input type="number" id="num2" required>
+  <input type="button" value="Add" onclick="compute();"> 
+  <input type="button" value="Sub" onclick="compute1();">
+  <input type="button" value="Mul" onclick="compute2();" >
+  <input type="button" value="Div" onclick="compute3();" >
+  <div id="result">
+    
+  </div>
+  <script>
+  function compute()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var res=+n1 + +n2;
+      alert("The result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+    function compute1()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var res=+n1 - +n2;
+      alert("The result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+    function compute2()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var res=+n1 * +n2;
+      alert("The result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+    function compute3()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var res=+n1 / +n2;
+      alert("The result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+  </script>
+</body>
+</html>
